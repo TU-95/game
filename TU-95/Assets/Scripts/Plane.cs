@@ -19,5 +19,10 @@ public class Plane : MonoBehaviour
         {
             transform.Translate(Time.deltaTime * speed, 0, 0, Camera.main.transform);
         }
+
+        if(Input.GetKey("w"))
+        {
+            transform.Translate(Time.deltaTime * speed, 0, 0, Camera.main.transform);
+        }
     }
 }
