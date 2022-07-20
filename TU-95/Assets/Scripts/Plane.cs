@@ -7,6 +7,7 @@ public class Plane : MonoBehaviour
 
     public float speed;
     public bool thrustState = false;
+    public float pitchConstant = 1f;
 
     // Start is called before the first frame update
     void Start()
@@ -36,7 +37,12 @@ public class Plane : MonoBehaviour
 
         if(Input.GetKey("a"))
         {
-            transform.Translate(Time.deltaTime * speed, 0, 0, Camera.main.transform);
+            transform.Rotate(0, 0, pitchConstant);
+        }
+
+        if(Input.GetKey("d"))
+        {
+            transform.Rotate(0, 0, -pitchConstant);
         }
     }
 }
