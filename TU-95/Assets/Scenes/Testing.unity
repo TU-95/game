@@ -337,7 +337,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0.2
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -357,6 +357,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1
   thrustState: 0
+  pitchConstant: 1
 --- !u!61 &1833450947
 BoxCollider2D:
   m_ObjectHideFlags: 0
